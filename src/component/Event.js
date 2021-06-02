@@ -15,12 +15,13 @@ export default function Event (){
 
   return(
     <div>
+      <h1>이벤트 처리</h1>
       <button onClick={showName}>ShowName</button>
 
       <button onClick={() => {
         showAge(30);
       }}>ShowAge</button>
-      
+
       <input type="text" onChange={showTxt} />
     </div>
   )

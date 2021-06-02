@@ -1,6 +1,7 @@
 import './App.css';
 import Hello from './component/Hello';
 import Event from './component/Event';
+import State from './component/State';
 import Welcome from './component/Welcome';
 
 //함수형 컴포넌트
@@ -36,6 +37,7 @@ function App() {
       <Hello />
       <Welcome />
       <Event />
+      <State />
     </div>
   );
 }
