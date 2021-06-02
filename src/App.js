@@ -1,5 +1,6 @@
 import './App.css';
 import Hello from './component/Hello';
+import Event from './component/Event';
 import Welcome from './component/Welcome';
 
 //함수형 컴포넌트
@@ -33,8 +34,8 @@ function App() {
       <a href={naver.url} target="_blank">{naver.name}</a> */}
 
       <Hello />
-      <Hello />
       <Welcome />
+      <Event />
     </div>
   );
 }
