@@ -3,6 +3,7 @@ import Hello from './component/Hello';
 import Event from './component/Event';
 import State from './component/State';
 import Welcome from './component/Welcome';
+import Props from './component/Props';
 
 //함수형 컴포넌트
 //모든 컴포넌트는 대문자로 시작해야 함
@@ -38,6 +39,8 @@ function App() {
       <Welcome />
       <Event />
       <State />
+      <Props age={10}/>
+      <Props age={20}/>
     </div>
   );
 }

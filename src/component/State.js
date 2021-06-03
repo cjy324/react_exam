@@ -22,7 +22,7 @@ export default function State (){
   return(
     <div>
       <h1>state</h1>
-      <h3>state는 컴포넌트가 갖고 있는 속성 값</h3>
+      <h4>state는 컴포넌트가 갖고 있는 속성 값</h4>
       <p>{name}</p>
       {/* 함수 적용방식 1 */}
       <button onClick={changeName1}>ChangeName(1)</button>
