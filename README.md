@@ -1,3 +1,52 @@
+# React 기초 NOTE
+
+## 링크
+https://www.youtube.com/watch?v=daoy5RHYmEA&list=PLZKTXPmaJk8J_fHAzPLH8CJ_HO_M33e7-&index=14
+
+
+## package.json 명령어 모음
+ - "start": "react-scripts start", 개발자모드로 실행
+ - "build": "react-scripts build", 배포
+ - "test": "react-scripts test", 테스트
+ - "eject": "react-scripts eject" 내부설정 파일을 꺼낼때 사용?
+
+## CSS 작성법
+1. 태그에 style로 인라인으로 바로 작성하는 방법
+2. index.css, App.css 처럼 파일을 만들어 작성하는 방법(결국 CSS가 통합되어 버리기 때문에 각 컴포넌트별로 관리가 어렵다(같은 class 이름이면 오버라이딩 되어 버림))
+3. App.module.css, Hello.module.css 처럼 각 컴포넌트별 css파일을 만들어 작성하는 방법(2번 방법의 문제점 해결)
+
+
+## '=', '==', '==='의 차이??
+'=' : value의 값
+예) number=2;
+
+'==' : value와 value를 비교
+예) a=2, b=3 일 때, a==b  =>  false;
+
+'===' : value와 type까지 비교
+예) a=2 일 때, a===2는 true, a==="2"는 false;
+
+## state
+ - state는 컴포넌트가 갖고 있는 속성 값
+ - state값이 변하면 자동으로 리엑트가 감지하고 ui를 자동으로 바꿔줌(화면이 자동 업데이트 됨)
+
+## props
+ - 상위 컴포넌트의 속성값
+
+## useEffect()
+ - state값이 바뀌었을때 동작하게 할 수 있는 함수
+ - state값이 변할때 다시 렌더링되는 순서
+ - vue에서 watch?와 비슷한 개념?
+
+## json-server API 연결 명령어
+json-server --watch ./src/db/data.json --port 3001
+
+
+
+
+
+-----------------------------------------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
