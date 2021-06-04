@@ -1,10 +1,13 @@
-import { useEffect, useState } from 'react';
+//import { useEffect, useState } from 'react';  //Custom Hook 적용으로 필요 x
 import { Link } from 'react-router-dom';
+import useFetch from '../hooks/useFetch';
 // import dummy from '../db/data.json';  //json-server로 API연결
 
 
 
 export default function DayList(){
+
+  /* Custom Hook 적용으로 필요 x
 
   const [days, setDays] = useState([])
 
@@ -28,6 +31,12 @@ export default function DayList(){
   }, [])
   //이렇게 빈 배열을 두번째 매개변수로 넣어주게 되면
   //렌더링 후 처음 한번만 함수가 호출되어 불필요한 호출을 줄일 수 있음
+
+  */
+
+  // Custom Hook 적용
+  //매개변수로 url값을 전달 후 리턴값으로 days를 받음
+  const days = useFetch(`http://localhost:3001/days`);
 
   return(
     <>
